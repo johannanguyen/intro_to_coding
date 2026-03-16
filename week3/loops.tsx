@@ -1,15 +1,15 @@
 // For Loop
-for (let i = 0; i < 100; i++) {
-  console.log(`Hello ${i} This is a for loop`);
-}
+// for (let i = 0; i < 100; i++) {
+//   console.log(`Hello ${i} This is a for loop`);
+// }
 
 // While loop
-let count = 0;
+// let count = 0;
 
-while (count < 5) {
-  console.log("count is: " + count + "This is a while loop");
-  count++;
-}
+// while (count < 5) {
+//   console.log("count is: " + count + "This is a while loop");
+//   count++;
+// }
 
 // Infinite loop
 // while (2 > 1) {

@@ -1,11 +1,11 @@
 const MAX_LIVES: number = 5;
 
-const player = {
+const player: { name: string; lives: number } = {
     name: "Jordan",
     lives: MAX_LIVES
 };
 
-const opponent = {
+const opponent: { name: string; lives: number } = {
     name: "Opponent",
     lives: MAX_LIVES
 };
@@ -68,6 +68,6 @@ console.log("Total rounds played: " + (round - 1));
 
 // loop through every item in the round log and print each round's result
 console.log("\n--- Round Summary ---");
-for (let i = 0; i < roundLog.length; i++) {
+for (let i: number = 0; i < roundLog.length; i++) {
     console.log(roundLog[i]);
 }

@@ -25,10 +25,6 @@ while (player.lives > 0 && opponent.lives > 0) {
     // roll a random number between 1 and 6 for the opponent
     const opponentRoll: number = Math.floor(Math.random() * 6) + 1;
 
-    console.log(`Round ${round}`);
-    console.log(`${player.name} rolled: ${playerRoll}`);
-    console.log(`${opponent.name} rolled: ${opponentRoll}`);
-
     // will hold a description of what happened this round
     let result: string;
 
@@ -51,8 +47,6 @@ while (player.lives > 0 && opponent.lives > 0) {
         result = "It's a tie! Nobody loses a life.";
     }
 
-    console.log(result);
-
     // add the result to the round log array
     roundLog.push(`Round ${round}: ${result}`);
 
@@ -63,7 +57,7 @@ while (player.lives > 0 && opponent.lives > 0) {
 // player ran out of lives
 if (player.lives === 0) {
     console.log(`Game over! ${player.name} has been defeated.`);
-    
+
 // opponent ran out of lives
 } else {
     console.log(`Game over! ${player.name} wins!`);
